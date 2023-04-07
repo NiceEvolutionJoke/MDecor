@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" sizes="32x32" href="">
+    <link rel="icon" type="image/ico" sizes="16x16" href="">
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="mask-icon" href="">
+    <link rel="mask-icon" href="">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>AI TXT</title>
+</head>
+
+<body class="theme">
+
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="_container">
+                <div class="header__block">
+                    <div class="header__content">
+                        <div class="header__burger-back theme">
+                            <div class="header__burger theme">
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="index.html" class="header__logo theme">
+                            <img src="img/header/logo-white.svg" alt="">
+                            <img src="img/header/logo-dark.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__body">
+                        <ul class="header__list theme">
+                            <li><a href="index.html" class="header__link theme">Главная страница</a></li>
+                            <li><a href="index.html#advantage" class="header__link theme">Преимущества</a></li>
+                            <li><a href="tool.html" class="header__link theme">Инструменты</a></li>
+                            <li><a href="rates.html" class="header__link theme">Тарифы</a></li>
+                        </ul>
+                        <div class="header__logins">
+                            <!--                  <div class="header__login theme">
+                        Войти
+                    </div> -->
+                            <a href="profile-2.html" class="header__register theme">
+                                <!-- Бесплатный аккаунт -->
+                                <span>5 бесплатных генераций</span>
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 13.5C1 20.4036 6.59644 26 13.5 26C20.4036 26 26 20.4036 26 13.5C26 6.59644 20.4036 1 13.5 1C6.59644 1 1 6.59644 1 13.5ZM13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0Z"
+                                        fill="#333333" />
+                                    <path d="M12 9L16 13L12 17" stroke="#333333" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__theme theme">
+                            <!--                     <img src="img/header/sun.svg" alt="" class="header-sun">
+                    <img src="img/header/moon.svg" alt="" class="header-moon"> -->
+                            <svg class="header-sun" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_118_42196" fill="white">
+                                    <path
+                                        d="M12.9868 1.32188C12.7661 1.32533 12.5557 1.41621 12.4019 1.57458C12.2481 1.73295 12.1635 1.94587 12.1665 2.16661V4.66661C12.1649 4.77703 12.1853 4.88667 12.2265 4.98914C12.2677 5.09161 12.3288 5.18488 12.4064 5.26352C12.4839 5.34217 12.5763 5.40461 12.6782 5.44724C12.7801 5.48986 12.8894 5.51181 12.9998 5.51181C13.1103 5.51181 13.2196 5.48986 13.3215 5.44724C13.4234 5.40461 13.5158 5.34217 13.5933 5.26352C13.6708 5.18488 13.732 5.09161 13.7731 4.98914C13.8143 4.88667 13.8347 4.77703 13.8332 4.66661V2.16661C13.8347 2.05511 13.8138 1.94445 13.7718 1.84117C13.7298 1.73788 13.6675 1.64408 13.5886 1.56531C13.5096 1.48654 13.4157 1.42441 13.3124 1.3826C13.209 1.34079 13.0983 1.32014 12.9868 1.32188ZM5.33055 4.49896C5.16491 4.49933 5.00314 4.54904 4.86588 4.64176C4.72863 4.73448 4.62211 4.866 4.55993 5.01952C4.49775 5.17305 4.48273 5.34162 4.51679 5.50372C4.55084 5.66582 4.63242 5.8141 4.75113 5.92963L6.5187 7.6972C6.59549 7.77718 6.68747 7.84103 6.78924 7.88502C6.89101 7.929 7.00054 7.95224 7.11141 7.95337C7.22227 7.95449 7.33225 7.93349 7.4349 7.89158C7.53754 7.84967 7.6308 7.78771 7.70919 7.70931C7.78759 7.63091 7.84956 7.53766 7.89147 7.43501C7.93338 7.33236 7.95438 7.22239 7.95325 7.11152C7.95213 7.00066 7.92889 6.89113 7.8849 6.78935C7.84092 6.68758 7.77707 6.59561 7.69709 6.51882L5.92951 4.75124C5.85166 4.67122 5.75853 4.60765 5.65564 4.56431C5.55275 4.52097 5.4422 4.49875 5.33055 4.49896ZM20.6431 4.49896C20.4266 4.50541 20.2211 4.5959 20.0701 4.75124L18.3026 6.51882C18.2226 6.59561 18.1587 6.68758 18.1147 6.78935C18.0708 6.89113 18.0475 7.00065 18.0464 7.11152C18.0453 7.22239 18.0663 7.33236 18.1082 7.43501C18.1501 7.53765 18.2121 7.63091 18.2905 7.7093C18.3689 7.7877 18.4621 7.84967 18.5648 7.89158C18.6674 7.93349 18.7774 7.95449 18.8882 7.95336C18.9991 7.95224 19.1086 7.929 19.2104 7.88501C19.3122 7.84103 19.4042 7.77718 19.4809 7.6972L21.2485 5.92963C21.3689 5.81257 21.4512 5.66187 21.4845 5.49727C21.5178 5.33267 21.5006 5.16185 21.4351 5.0072C21.3697 4.85254 21.259 4.72127 21.1177 4.63058C20.9764 4.53989 20.8109 4.49401 20.6431 4.49896ZM12.9998 7.16661C11.4527 7.16661 9.969 7.78119 8.87504 8.87515C7.78107 9.96911 7.16649 11.4528 7.16649 12.9999C7.16649 14.547 7.78107 16.0308 8.87504 17.1247C9.969 18.2187 11.4527 18.8333 12.9998 18.8333C14.5469 18.8333 16.0307 18.2187 17.1246 17.1247C18.2186 16.0308 18.8332 14.547 18.8332 12.9999C18.8332 11.4528 18.2186 9.96911 17.1246 8.87515C16.0307 7.78119 14.5469 7.16661 12.9998 7.16661ZM2.16649 12.1666C2.05606 12.165 1.94643 12.1854 1.84396 12.2266C1.74148 12.2678 1.64821 12.3289 1.56957 12.4065C1.49093 12.484 1.42848 12.5764 1.38586 12.6783C1.34324 12.7802 1.32129 12.8895 1.32129 12.9999C1.32129 13.1104 1.34324 13.2197 1.38586 13.3216C1.42848 13.4235 1.49093 13.5159 1.56957 13.5934C1.64821 13.6709 1.74148 13.7321 1.84396 13.7733C1.94643 13.8144 2.05606 13.8348 2.16649 13.8333H4.66649C4.77692 13.8348 4.88655 13.8144 4.98903 13.7733C5.0915 13.7321 5.18477 13.6709 5.26341 13.5934C5.34205 13.5159 5.4045 13.4235 5.44712 13.3216C5.48974 13.2197 5.51169 13.1104 5.51169 12.9999C5.51169 12.8895 5.48974 12.7802 5.44712 12.6783C5.4045 12.5764 5.34205 12.484 5.26341 12.4065C5.18477 12.3289 5.0915 12.2678 4.98903 12.2266C4.88655 12.1854 4.77692 12.165 4.66649 12.1666H2.16649ZM21.3332 12.1666C21.2227 12.165 21.1131 12.1854 21.0106 12.2266C20.9081 12.2678 20.8149 12.3289 20.7362 12.4065C20.6576 12.484 20.5952 12.5764 20.5525 12.6783C20.5099 12.7802 20.488 12.8895 20.488 12.9999C20.488 13.1104 20.5099 13.2197 20.5525 13.3216C20.5952 13.4235 20.6576 13.5159 20.7362 13.5934C20.8149 13.6709 20.9081 13.7321 21.0106 13.7733C21.1131 13.8144 21.2227 13.8348 21.3332 13.8333H23.8332C23.9436 13.8348 24.0532 13.8144 24.1557 13.7733C24.2582 13.7321 24.3514 13.6709 24.4301 13.5934C24.5087 13.5159 24.5712 13.4235 24.6138 13.3216C24.6564 13.2197 24.6784 13.1104 24.6784 12.9999C24.6784 12.8895 24.6564 12.7802 24.6138 12.6783C24.5712 12.5764 24.5087 12.484 24.4301 12.4065C24.3514 12.3289 24.2582 12.2678 24.1557 12.2266C24.0532 12.1854 23.9436 12.165 23.8332 12.1666H21.3332ZM7.09162 18.0504C6.87512 18.0568 6.66964 18.1473 6.5187 18.3027L4.75113 20.0703C4.67115 20.147 4.6073 20.239 4.56332 20.3408C4.51933 20.4426 4.49609 20.5521 4.49497 20.663C4.49384 20.7738 4.51485 20.8838 4.55675 20.9864C4.59866 21.0891 4.66063 21.1823 4.73903 21.2607C4.81742 21.3391 4.91068 21.4011 5.01332 21.443C5.11597 21.4849 5.22595 21.5059 5.33681 21.5048C5.44768 21.5037 5.5572 21.4804 5.65898 21.4364C5.76075 21.3925 5.85272 21.3286 5.92951 21.2486L7.69709 19.4811C7.81751 19.364 7.89976 19.2133 7.93306 19.0487C7.96636 18.8841 7.94915 18.7133 7.8837 18.5586C7.81825 18.404 7.70761 18.2727 7.56627 18.182C7.42492 18.0913 7.25948 18.0454 7.09162 18.0504ZM18.8836 18.0504C18.7178 18.0504 18.5558 18.0999 18.4183 18.1925C18.2808 18.2851 18.1741 18.4166 18.1117 18.5702C18.0493 18.7238 18.0341 18.8925 18.0681 19.0548C18.1021 19.217 18.1838 19.3654 18.3026 19.4811L20.0701 21.2486C20.1469 21.3286 20.2389 21.3925 20.3407 21.4364C20.4424 21.4804 20.552 21.5037 20.6628 21.5048C20.7737 21.5059 20.8837 21.4849 20.9863 21.443C21.089 21.4011 21.1822 21.3391 21.2606 21.2607C21.339 21.1823 21.401 21.0891 21.4429 20.9864C21.4848 20.8838 21.5058 20.7738 21.5047 20.663C21.5036 20.5521 21.4803 20.4426 21.4363 20.3408C21.3923 20.239 21.3285 20.147 21.2485 20.0703L19.4809 18.3027C19.4033 18.2228 19.3104 18.1594 19.2078 18.1161C19.1052 18.0727 18.995 18.0504 18.8836 18.0504ZM12.9868 20.4885C12.7661 20.492 12.5557 20.5829 12.4019 20.7412C12.2481 20.8996 12.1635 21.1125 12.1665 21.3333V23.8333C12.1649 23.9437 12.1853 24.0533 12.2265 24.1558C12.2677 24.2583 12.3288 24.3515 12.4064 24.4302C12.4839 24.5088 12.5763 24.5713 12.6782 24.6139C12.7801 24.6565 12.8894 24.6785 12.9998 24.6785C13.1103 24.6785 13.2196 24.6565 13.3215 24.6139C13.4234 24.5713 13.5158 24.5088 13.5933 24.4302C13.6708 24.3515 13.732 24.2583 13.7731 24.1558C13.8143 24.0533 13.8347 23.9437 13.8332 23.8333V21.3333C13.8347 21.2218 13.8138 21.1111 13.7718 21.0078C13.7298 20.9045 13.6675 20.8107 13.5886 20.732C13.5096 20.6532 13.4157 20.5911 13.3124 20.5493C13.209 20.5075 13.0983 20.4868 12.9868 20.4885Z" />
+                                </mask>
+                                <path
+                                    d="M12.9868 1.32188C12.7661 1.32533 12.5557 1.41621 12.4019 1.57458C12.2481 1.73295 12.1635 1.94587 12.1665 2.16661V4.66661C12.1649 4.77703 12.1853 4.88667 12.2265 4.98914C12.2677 5.09161 12.3288 5.18488 12.4064 5.26352C12.4839 5.34217 12.5763 5.40461 12.6782 5.44724C12.7801 5.48986 12.8894 5.51181 12.9998 5.51181C13.1103 5.51181 13.2196 5.48986 13.3215 5.44724C13.4234 5.40461 13.5158 5.34217 13.5933 5.26352C13.6708 5.18488 13.732 5.09161 13.7731 4.98914C13.8143 4.88667 13.8347 4.77703 13.8332 4.66661V2.16661C13.8347 2.05511 13.8138 1.94445 13.7718 1.84117C13.7298 1.73788 13.6675 1.64408 13.5886 1.56531C13.5096 1.48654 13.4157 1.42441 13.3124 1.3826C13.209 1.34079 13.0983 1.32014 12.9868 1.32188ZM5.33055 4.49896C5.16491 4.49933 5.00314 4.54904 4.86588 4.64176C4.72863 4.73448 4.62211 4.866 4.55993 5.01952C4.49775 5.17305 4.48273 5.34162 4.51679 5.50372C4.55084 5.66582 4.63242 5.8141 4.75113 5.92963L6.5187 7.6972C6.59549 7.77718 6.68747 7.84103 6.78924 7.88502C6.89101 7.929 7.00054 7.95224 7.11141 7.95337C7.22227 7.95449 7.33225 7.93349 7.4349 7.89158C7.53754 7.84967 7.6308 7.78771 7.70919 7.70931C7.78759 7.63091 7.84956 7.53766 7.89147 7.43501C7.93338 7.33236 7.95438 7.22239 7.95325 7.11152C7.95213 7.00066 7.92889 6.89113 7.8849 6.78935C7.84092 6.68758 7.77707 6.59561 7.69709 6.51882L5.92951 4.75124C5.85166 4.67122 5.75853 4.60765 5.65564 4.56431C5.55275 4.52097 5.4422 4.49875 5.33055 4.49896ZM20.6431 4.49896C20.4266 4.50541 20.2211 4.5959 20.0701 4.75124L18.3026 6.51882C18.2226 6.59561 18.1587 6.68758 18.1147 6.78935C18.0708 6.89113 18.0475 7.00065 18.0464 7.11152C18.0453 7.22239 18.0663 7.33236 18.1082 7.43501C18.1501 7.53765 18.2121 7.63091 18.2905 7.7093C18.3689 7.7877 18.4621 7.84967 18.5648 7.89158C18.6674 7.93349 18.7774 7.95449 18.8882 7.95336C18.9991 7.95224 19.1086 7.929 19.2104 7.88501C19.3122 7.84103 19.4042 7.77718 19.4809 7.6972L21.2485 5.92963C21.3689 5.81257 21.4512 5.66187 21.4845 5.49727C21.5178 5.33267 21.5006 5.16185 21.4351 5.0072C21.3697 4.85254 21.259 4.72127 21.1177 4.63058C20.9764 4.53989 20.8109 4.49401 20.6431 4.49896ZM12.9998 7.16661C11.4527 7.16661 9.969 7.78119 8.87504 8.87515C7.78107 9.96911 7.16649 11.4528 7.16649 12.9999C7.16649 14.547 7.78107 16.0308 8.87504 17.1247C9.969 18.2187 11.4527 18.8333 12.9998 18.8333C14.5469 18.8333 16.0307 18.2187 17.1246 17.1247C18.2186 16.0308 18.8332 14.547 18.8332 12.9999C18.8332 11.4528 18.2186 9.96911 17.1246 8.87515C16.0307 7.78119 14.5469 7.16661 12.9998 7.16661ZM2.16649 12.1666C2.05606 12.165 1.94643 12.1854 1.84396 12.2266C1.74148 12.2678 1.64821 12.3289 1.56957 12.4065C1.49093 12.484 1.42848 12.5764 1.38586 12.6783C1.34324 12.7802 1.32129 12.8895 1.32129 12.9999C1.32129 13.1104 1.34324 13.2197 1.38586 13.3216C1.42848 13.4235 1.49093 13.5159 1.56957 13.5934C1.64821 13.6709 1.74148 13.7321 1.84396 13.7733C1.94643 13.8144 2.05606 13.8348 2.16649 13.8333H4.66649C4.77692 13.8348 4.88655 13.8144 4.98903 13.7733C5.0915 13.7321 5.18477 13.6709 5.26341 13.5934C5.34205 13.5159 5.4045 13.4235 5.44712 13.3216C5.48974 13.2197 5.51169 13.1104 5.51169 12.9999C5.51169 12.8895 5.48974 12.7802 5.44712 12.6783C5.4045 12.5764 5.34205 12.484 5.26341 12.4065C5.18477 12.3289 5.0915 12.2678 4.98903 12.2266C4.88655 12.1854 4.77692 12.165 4.66649 12.1666H2.16649ZM21.3332 12.1666C21.2227 12.165 21.1131 12.1854 21.0106 12.2266C20.9081 12.2678 20.8149 12.3289 20.7362 12.4065C20.6576 12.484 20.5952 12.5764 20.5525 12.6783C20.5099 12.7802 20.488 12.8895 20.488 12.9999C20.488 13.1104 20.5099 13.2197 20.5525 13.3216C20.5952 13.4235 20.6576 13.5159 20.7362 13.5934C20.8149 13.6709 20.9081 13.7321 21.0106 13.7733C21.1131 13.8144 21.2227 13.8348 21.3332 13.8333H23.8332C23.9436 13.8348 24.0532 13.8144 24.1557 13.7733C24.2582 13.7321 24.3514 13.6709 24.4301 13.5934C24.5087 13.5159 24.5712 13.4235 24.6138 13.3216C24.6564 13.2197 24.6784 13.1104 24.6784 12.9999C24.6784 12.8895 24.6564 12.7802 24.6138 12.6783C24.5712 12.5764 24.5087 12.484 24.4301 12.4065C24.3514 12.3289 24.2582 12.2678 24.1557 12.2266C24.0532 12.1854 23.9436 12.165 23.8332 12.1666H21.3332ZM7.09162 18.0504C6.87512 18.0568 6.66964 18.1473 6.5187 18.3027L4.75113 20.0703C4.67115 20.147 4.6073 20.239 4.56332 20.3408C4.51933 20.4426 4.49609 20.5521 4.49497 20.663C4.49384 20.7738 4.51485 20.8838 4.55675 20.9864C4.59866 21.0891 4.66063 21.1823 4.73903 21.2607C4.81742 21.3391 4.91068 21.4011 5.01332 21.443C5.11597 21.4849 5.22595 21.5059 5.33681 21.5048C5.44768 21.5037 5.5572 21.4804 5.65898 21.4364C5.76075 21.3925 5.85272 21.3286 5.92951 21.2486L7.69709 19.4811C7.81751 19.364 7.89976 19.2133 7.93306 19.0487C7.96636 18.8841 7.94915 18.7133 7.8837 18.5586C7.81825 18.404 7.70761 18.2727 7.56627 18.182C7.42492 18.0913 7.25948 18.0454 7.09162 18.0504ZM18.8836 18.0504C18.7178 18.0504 18.5558 18.0999 18.4183 18.1925C18.2808 18.2851 18.1741 18.4166 18.1117 18.5702C18.0493 18.7238 18.0341 18.8925 18.0681 19.0548C18.1021 19.217 18.1838 19.3654 18.3026 19.4811L20.0701 21.2486C20.1469 21.3286 20.2389 21.3925 20.3407 21.4364C20.4424 21.4804 20.552 21.5037 20.6628 21.5048C20.7737 21.5059 20.8837 21.4849 20.9863 21.443C21.089 21.4011 21.1822 21.3391 21.2606 21.2607C21.339 21.1823 21.401 21.0891 21.4429 20.9864C21.4848 20.8838 21.5058 20.7738 21.5047 20.663C21.5036 20.5521 21.4803 20.4426 21.4363 20.3408C21.3923 20.239 21.3285 20.147 21.2485 20.0703L19.4809 18.3027C19.4033 18.2228 19.3104 18.1594 19.2078 18.1161C19.1052 18.0727 18.995 18.0504 18.8836 18.0504ZM12.9868 20.4885C12.7661 20.492 12.5557 20.5829 12.4019 20.7412C12.2481 20.8996 12.1635 21.1125 12.1665 21.3333V23.8333C12.1649 23.9437 12.1853 24.0533 12.2265 24.1558C12.2677 24.2583 12.3288 24.3515 12.4064 24.4302C12.4839 24.5088 12.5763 24.5713 12.6782 24.6139C12.7801 24.6565 12.8894 24.6785 12.9998 24.6785C13.1103 24.6785 13.2196 24.6565 13.3215 24.6139C13.4234 24.5713 13.5158 24.5088 13.5933 24.4302C13.6708 24.3515 13.732 24.2583 13.7731 24.1558C13.8143 24.0533 13.8347 23.9437 13.8332 23.8333V21.3333C13.8347 21.2218 13.8138 21.1111 13.7718 21.0078C13.7298 20.9045 13.6675 20.8107 13.5886 20.732C13.5096 20.6532 13.4157 20.5911 13.3124 20.5493C13.209 20.5075 13.0983 20.4868 12.9868 20.4885Z"
+                                    stroke="#333333" stroke-width="2" mask="url(#path-1-inside-1_118_42196)" />
+                                <rect x="7.75" y="7.75" width="10.5" height="10.5" rx="5.25" fill="#F7F7F7"
+                                    stroke="#333333" stroke-width="1.5" />
+                            </svg>
+                            <svg class="header-moon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_202_2948" fill="white">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.8184 0.00397564C11.6646 1.89705 11 4.12091 11 6.5C11 13.2971 16.4252 18.8271 23.1816 18.996C20.9875 22.5962 17.0245 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C12.6064 0 12.7126 0.00133046 12.8184 0.00397564Z" />
+                                </mask>
+                                <path
+                                    d="M12.8184 0.00397564L13.6723 0.524394L14.5724 -0.952486L12.8434 -0.995712L12.8184 0.00397564ZM23.1816 18.996L24.0355 19.5164L24.9356 18.0396L23.2066 17.9963L23.1816 18.996ZM12 6.5C12 4.30965 12.6114 2.26515 13.6723 0.524394L11.9645 -0.516443C10.7179 1.52895 10 3.93216 10 6.5H12ZM23.2066 17.9963C16.9912 17.8409 12 12.7532 12 6.5H10C10 13.841 15.8592 19.8133 23.1566 19.9957L23.2066 17.9963ZM22.3277 18.4756C20.3075 21.7904 16.6613 24 12.5 24V26C17.3876 26 21.6675 23.402 24.0355 19.5164L22.3277 18.4756ZM12.5 24C6.14873 24 1 18.8513 1 12.5H-1C-1 19.9558 5.04416 26 12.5 26V24ZM1 12.5C1 6.14873 6.14873 1 12.5 1V-1C5.04416 -1 -1 5.04416 -1 12.5H1ZM12.5 1C12.5981 1 12.6959 1.00123 12.7934 1.00366L12.8434 -0.995712C12.7292 -0.998565 12.6148 -1 12.5 -1V1Z"
+                                    fill="white" mask="url(#path-1-inside-1_202_2948)" />
+                            </svg>
+                        </div>
+                        <div class="header__user theme">
+                            <a>
+                                <img src="img/header/user-white.svg" alt="" class="header-user__white header-user-img">
+                                <img src="img/header/user-dark.svg" alt="" class="header-user__dark header-user-img">
+                            </a>
+                            <div class="header-user__block">
+                                <div class="header-user__body theme">
+                                    <div class="header-user__name">Антон Рубанов</div>
+                                    <a href="" class="header-user__email">antonrubanov@bk.ru</a>
+                                    <ul class="header-user__list theme">
+                                        <li><a href="profile.html" class="header-user__link theme">Мой профиль</a></li>
+                                        <li><a href="profile-2.html" class="header-user__link theme">Генератор
+                                                текста</a></li>
+                                        <li><a href="profile-3.html" class="header-user__link theme">Генератор
+                                                SEO-текста</a>
+                                        </li>
+                                        <li><a href="profile-4.html" class="header-user__link theme">Генератор
+                                                названий</a></li>
+                                        <li><a href="profile-5.html" class="header-user__link theme">Рерайт текстов</a>
+                                        </li>
+                                        <li><a href="profile-5.html" class="header-user__link theme">Перевод текстов</a>
+                                        </li>
+                                        <li><a href="profile-6.html" class="header-user__link theme">Подписка и
+                                                оплаты</a></li>
+                                    </ul>
+                                    <button class="header-user__btn">
+                                        Выйти
+                                    </button>
+                                    <div class="header-user__close">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="29" height="29" rx="7.5" fill="#F7F7F7"
+                                                stroke="#333333" />
+                                            <path d="M9.375 9.375L20.625 20.5119" stroke="#333333"
+                                                stroke-linecap="round" />
+                                            <path d="M9.375 20.625L20.625 9.48806" stroke="#333333"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-user__shadow theme">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-burger__block header-burger theme">
+                <ul class="header-burger__list">
+                    <li><a href="" class="header-burger__link theme">Главная страница</a></li>
+                    <li><a href="" class="header-burger__link theme">Преимущества</a></li>
+                    <li><a href="" class="header-burger__link theme">Инструменты</a></li>
+                    <li><a href="" class="header-burger__link theme">Тарифы</a></li>
+                </ul>
+                <div class="header__register theme lock">
+                    Бесплатный аккаунт
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 13.5C1 20.4036 6.59644 26 13.5 26C20.4036 26 26 20.4036 26 13.5C26 6.59644 20.4036 1 13.5 1C6.59644 1 1 6.59644 1 13.5ZM13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0Z"
+                            fill="#333333" />
+                        <path d="M12 9L16 13L12 17" stroke="#333333" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="profile-main profile">
+                <div class="_container">
+                    <div class="profile__block">
+                        <div class="profile__block-list">
+                            <ul class="profile__list">
+                                <li class="profile__subtitle">Ваш аккаунт</li>
+                                <li><a href="profile.html" class="profile__link theme">Мой профиль</a></li>
+                                <li><a href="profile-2.html" class="profile__link theme">Генератор текста</a></li>
+                                <li><a href="profile-3.html" class="profile__link active theme">Генератор SEO-текста</a>
+                                </li>
+                                <li><a href="profile-4.html" class="profile__link theme">Генератор названий</a></li>
+                                <li><a href="profile-5.html" class="profile__link theme">Рерайт текстов</a></li>
+                                <li><a href="profile-6.html" class="profile__link theme">Перевод текстов</a></li>
+                                <li><a href="profile-7.html" class="profile__link theme">Баланс и подписка</a></li>
+                                <li><a href="profile-8.html" class="profile__link theme">Тех. поддержка</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile__body">
+                            <form action="" class="profile__form">
+                                <div class="profile__title">
+                                    Генератор Seo-текста
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Задача:
+                                </div>
+                                <div class="profile-generate-text__input theme">
+                                    <input type="text" value="Требуется написать описание товара">
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Объем текста:
+                                </div>
+                                <div class="profile-generate-text__inputs">
+                                    <div class="profile-generate-text__subinput-block theme">
+                                        <input type="text" value="0-1500" class="profile-generate-text__subinput-num">
+                                        <div class="profile-generate-text__subinput-num-plus">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="21.5" y="21.5" width="21" height="21" rx="3.5"
+                                                    transform="rotate(-180 21.5 21.5)" fill="#F7F7F7"
+                                                    stroke="#333333" />
+                                                <path d="M16 13.5L11 8.5L6 13.5" stroke="#333333" stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-generate-text__subinput-num-minus lock">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="21" height="21" rx="3.5" fill="#F7F7F7"
+                                                    stroke="#333333" />
+                                                <path d="M6 8.5L11 13.5L16 8.5" stroke="#333333" stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="profile-generate-text__select theme" data-state="">
+                                        <div class="profile-generate-text__select__title" data-default="">Слов</div>
+                                        <div class="profile-generate-text__select__content">
+                                            <input id="singleSelect0" class="profile-generate-text__select__input"
+                                                type="radio" name="singleSelect" checked />
+                                            <label for="singleSelect0"
+                                                class="profile-generate-text__select__label">Слов</label>
+                                            <input id="singleSelect1" class="profile-generate-text__select__input"
+                                                type="radio" name="singleSelect" />
+                                            <label for="singleSelect1"
+                                                class="profile-generate-text__select__label">Cимволов</label>
+                                            <input id="singleSelect2" class="profile-generate-text__select__input"
+                                                type="radio" name="singleSelect" />
+                                            <label for="singleSelect2"
+                                                class="profile-generate-text__select__label">Предложений</label>
+                                            <input id="singleSelect3" class="profile-generate-text__select__input"
+                                                type="radio" name="singleSelect" />
+                                            <label for="singleSelect3"
+                                                class="profile-generate-text__select__label">Слов</label>
+                                            <input id="singleSelect4" class="profile-generate-text__select__input"
+                                                type="radio" name="singleSelect" />
+                                            <label for="singleSelect4"
+                                                class="profile-generate-text__select__label">Абзацев</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Ключевые слова:
+                                </div>
+                                <div class="profile-generate-text__input theme">
+                                    <input type="text"
+                                        value="Купить товар - употребить 2 раза,      Заказать товар - употребить два раза">
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Требования к тексту:
+                                </div>
+                                <div class="profile-generate-text__input theme">
+                                    <input type="text" value="Уникальный текст">
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Цель текста:
+                                </div>
+                                <div class="profile-generate-text__input theme">
+                                    <input type="text" value="Предоставить понятное описание товара">
+                                </div>
+                                <div class="profile-generate-text__text">
+                                    Дополнительная информация:
+                                </div>
+                                <div class="profile-generate-text__input theme">
+                                    <input type="text" value="Опираться на текст со страницы example.com">
+                                </div>
+                                <div class="profile-generate-text__body">
+                                    <div class="profile-generate-text__btns">
+                                        <button class="profile-generate-text__copy theme">
+                                            Скопировать текст
+                                        </button>
+                                        <a href="" class="profile-generate-text__download theme">
+                                            Скачать docx
+                                        </a>
+                                    </div>
+                                    <div class="profile-generate-text__subtext">
+                                        Длина текста (символов): 540 (без пробелов: 466)
+                                    </div>
+                                </div>
+                                <div class="profile-generate-text__textarea theme">
+                                    <textarea name="" id="text-profile-2">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+
+Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
+                            </textarea>
+                                </div>
+                                <div class="profile-generate-text__uniqueness-block">
+                                    <span>Уникальность текста: </span>
+                                    <div class="profile-generate-text__uniqueness theme">
+                                        86.4%
+                                    </div>
+                                </div>
+                                <a href="" class="profile-generate-text__link">
+                                    Показать все совпадения
+                                </a>
+                                <div class="profile-generate-text__items">
+                                    <div class="profile-generate-text__item-titles theme">
+                                        <div class="profile-generate-text__item-title">Адрес страницы</div>
+                                        <div class="profile-generate-text__item-title">Сколько совпало</div>
+                                        <div class="profile-generate-text__item-title">Совпадения</div>
+                                    </div>
+                                    <div class="profile-generate-text__item theme">
+                                        <a href="" class="profile-generate-text__subitem">clinica-paramita.ru</a>
+                                        <div class="profile-generate-text__subitem">46.7%</div>
+                                        <a href="" class="profile-generate-text__subitem">Показать</a>
+                                    </div>
+                                    <div class="profile-generate-text__item theme">
+                                        <a href="" class="profile-generate-text__subitem">clinica-paramita.ru</a>
+                                        <div class="profile-generate-text__subitem">46.7%</div>
+                                        <a href="" class="profile-generate-text__subitem">Показать</a>
+                                    </div>
+                                    <div class="profile-generate-text__item theme">
+                                        <a href="" class="profile-generate-text__subitem">clinica-paramita.ru</a>
+                                        <div class="profile-generate-text__subitem">46.7%</div>
+                                        <a href="" class="profile-generate-text__subitem">Показать</a>
+                                    </div>
+                                    <div class="profile-generate-text__item theme">
+                                        <a href="" class="profile-generate-text__subitem">clinica-paramita.ru</a>
+                                        <div class="profile-generate-text__subitem">46.7%</div>
+                                        <a href="" class="profile-generate-text__subitem">Показать</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer theme">
+            <div class="_container">
+                <div class="footer__block">
+                    <div class="footer__logo theme">
+                        <img src="img/header/logo-white.svg" alt="">
+                        <img src="img/header/logo-dark.svg" alt="">
+                    </div>
+                    <ul class="footer__list theme">
+                        <li><a href="index.html#advantage" class="footer__link">Преимущества</a></li>
+                        <li><a href="tool.html" class="footer__link">Инструменты</a></li>
+                        <li><a href="rates.html" class="footer__link">Тарифы</a></li>
+                        <li><a href="policy.html" class="footer__link">Политика конфиденциалности</a></li>
+                        <li><a href="policy.html" class="footer__link">Договор аферты</a></li>
+                    </ul>
+                    <div class="header__register-block">
+                        <div class="header__register theme">
+                            <span>Бесплатный аккаунт</span>
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 13.5C1 20.4036 6.59644 26 13.5 26C20.4036 26 26 20.4036 26 13.5C26 6.59644 20.4036 1 13.5 1C6.59644 1 1 6.59644 1 13.5ZM13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0Z"
+                                    fill="#333333" />
+                                <path d="M12 9L16 13L12 17" stroke="#333333" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script-profile-2.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
