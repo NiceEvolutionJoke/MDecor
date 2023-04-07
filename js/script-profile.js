@@ -1,0 +1,1 @@
+const profileBtn=document.querySelectorAll(".profile-btn"),profileContent=document.querySelectorAll(".profile-content");for(let e=0;e<profileBtn.length;e++)profileBtn[e].addEventListener("click",(()=>{profileContent[e].classList.toggle("active"),profileBtn[e].classList.toggle("active")}));
